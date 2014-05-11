@@ -1,6 +1,6 @@
 'use strict';
 
-var App = angular.module('Portfolio', []);
+var App = angular.module('Portfolio', ['ngSanitize']);
 
 App.controller("MainController", ['$scope', '$http', function($scope, $http) {
 	$scope.loadJson = function() {
