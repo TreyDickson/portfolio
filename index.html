@@ -29,14 +29,15 @@
 		</script>
 	</head>
 	<body ng-controller="MainController">
-		<div class="wrapper">
-			<header ng-include="'templates/header.html'">
+			<header >
+				<div class="wrapper" ng-include="'templates/header.html'">
+				</div>
 				
 			</header>
-			<main>
+			<main class="wrapper">
 				<div class="description">
-					<p class="description-left">I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
-					<span class="description-right">
+					<p class="body-section">I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
+					<span class="body-section">
 						<p>Just some of the technologies I have experience with include:</p>
 						<ul>
 							<li ng-repeat="skill in content.info.skills">{{skill}}</li>
@@ -44,7 +45,7 @@
 						<p>To view my full list of qualifications and work experience, please visit my <a target="_blank" href="{{content.info.linkedin.url}}">LinkedIn Profile</a>.</p>
 					</span>
 				</div>
-				<div class="project" ng-repeat="project in content.projects" ng-include="'templates/project.html'">
+				<div class="project body-section" ng-repeat="project in content.projects" ng-include="'templates/project.html'">
 
 				</div>
 				<!--<span ng-repeat="project in content.projects">
@@ -69,19 +70,10 @@
 					</section>
 				</span>-->
 			</main>
-			<footer ng-include="'templates/footer.html'">
-				<!--<p>
-					Trey Dickson - Online Portfolio<br/>
-					<small>Built with love and <a target="_blank" href="http://validator.w3.org/check?uri=referer">valid markup</a></small>
-				</p>
-				<ul class="contact-links" ng-repeat="(key, value) in content.info.contact">
-					<li class="{{key}}">
-						<a href="{{value.url}}" target="_blank">
-							<i class="{{value.icon_class}}"></i>{{value.alt_text}}
-						</a>
-					</li>
-				</ul>-->
+			<footer >
+				<div class="wrapper" ng-include="'templates/footer.html'">
+
+				</div>
 			</footer>
-		</div>
 	</body>
 </html>

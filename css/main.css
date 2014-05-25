@@ -16,7 +16,7 @@ a:focus {
 h1 {
 	font-size: 22px;
 }
-header {
+header, footer {
 	overflow: hidden;
 	background: #34414c;
 }
@@ -25,33 +25,38 @@ nav li {
 }
 footer {
 	clear: left;
-	background: #34414c;
-	overflow: hidden;
 }
-.description {
-	float: right;
-	max-width: 40%;
-	padding-right: 65px;
-}
-.header-left {
+
+header h1 {
 	float: left;
-	max-width: 40%;
-	padding-left: 65px;
+	padding-left: 25px;
 }
-.header-left p {
-	margin-top: -10px;
+header p {
+	float: left;
+	padding-left: 10px;
 }
+header nav {
+	float: right;
+}
+footer h1 {
+	float: right;
+}
+
 .wrapper {
 	max-width: 1167px;
 	margin: auto;
 }
-.project {
+.body-section {
 	width: 550px;
-	height: 350px;
 	float: left;
 	padding: 0 15px 15px 15px;
 }
-.project .project-header {
+
+
+.project {
+	height: 350px;
+}
+.project-header {
 	height: 50px;
 	background: white;
 	color: #ad1c00;
@@ -61,6 +66,6 @@ footer {
 	max-height: 100%;
 }
 .project-image {
-	background: grey;
+	
 }
 
