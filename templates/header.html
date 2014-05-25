@@ -1,0 +1,9 @@
+<span class="header-left">
+	<h1>{{content.info.title}}</h1>
+	<p class="subtitle">{{content.info.subtitle}}</p>
+	<nav>
+		<a href="{{value.url}}" target="_blank" ng-repeat="(key, value) in content.info.contact">
+			{{value.name}}
+		</a>
+	</nav>
+</span>
