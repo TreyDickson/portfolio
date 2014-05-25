@@ -30,14 +30,17 @@
 	</head>
 	<body ng-controller="MainController">
 			<header >
-				<div class="wrapper" ng-include="'templates/header.html'">
+				<div class="header-wrapper wrapper" ng-include="'templates/header.html'">
 				</div>
-				
 			</header>
 			<main class="wrapper">
 				<div class="description">
-					<p class="body-section">I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
-					<span class="body-section">
+					<span class="description-left">
+						<p>I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
+						<p>I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
+						<p>I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
+					</span>
+					<span class="body-section description-right">
 						<p>Just some of the technologies I have experience with include:</p>
 						<ul>
 							<li ng-repeat="skill in content.info.skills">{{skill}}</li>
@@ -71,7 +74,7 @@
 				</span>-->
 			</main>
 			<footer >
-				<div class="wrapper" ng-include="'templates/footer.html'">
+				<div class="footer-wrapper wrapper" ng-include="'templates/footer.html'">
 
 				</div>
 			</footer>
