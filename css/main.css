@@ -2,16 +2,18 @@ body {
 	background: #485865;
 	color: white;
 	font-size: 15px;
+	font-family: 'Arial', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 h1 {
 	font-size: 22px;
 	margin: 0;
+	text-transform: uppercase;
 }
 a {
 	color: white;
-	font-size: 14px;
+	font-size: 15px;
 }
 nav a {
 	padding-right: 10px;
@@ -31,19 +33,17 @@ header, footer {
 }
 
 header h1 {
-	float: left;
 	padding-left: 25px;
 }
 header p {
-	float: left;
 	padding-left: 10px;
 	margin: 0;
 }
 header nav {
-	float: right;
 	padding-right: 50px;
 }
 .header-wrapper {
+	line-height: 60px;
 	height: inherit;
 }
 .header-wrapper span {
@@ -54,17 +54,20 @@ footer {
 	clear: left;
 }
 footer nav {
-	float: left;
 	padding-left: 25px;
 }
 footer h1 {
-	float: right;
-	padding-right: 50px;
+	padding-right: 5px;
 }
 footer p {
-	float: right;
+	padding-right: 5px;
+	margin: 0;
+}
+.footer-right {
+	padding-right: 50px;
 }
 .footer-wrapper {
+	line-height: 60px;
 	height: inherit;
 }
 .footer-wrapper span {
@@ -92,20 +95,28 @@ footer p {
 }
 .description {
 	padding: 20px 0 30px 0;
+	overflow: hidden;
 }
 
 .project {
-	margin-bottom: 25px;
+	padding: 10px 0;
 }
 .project-header {
-	height: 50px;
 	text-align: center;
 	border-bottom: 1px solid #d5d5cd;
 	margin: auto auto 15px auto;
 	width: 75%;
 }
+.project-header a {
+	font-size: 22px;
+}
 .project-header h2 {
 	margin: 0;
+	font-size: 22px;
+}
+.project-header span {
+	display: block;
+	padding: 5px 0 10px 0;
 }
 .project img {
 	max-width: 100%;
@@ -136,10 +147,21 @@ footer p {
 }
 
 .vertical-center {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
+	display: inline-block;
+	vertical-align: middle;	
+}
+.nojs {
+	text-align: center;
+	font-size: 30px;
+}
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
 }
 
+.dark_bg {
+	overflow: hidden;
+	background: #34414c;
+}

@@ -1,0 +1,28 @@
+<header>
+	<div class="header-wrapper wrapper" ng-include="'templates/header.html'">
+	</div>
+</header>
+<main>
+	<div class="description wrapper">
+		<div class="description-left">
+			<p ng-repeat="paragraph in content.description.paragraphs">
+				{{paragraph}}
+			</p>
+		</div>
+		<div class="body-section description-right">
+			<p>{{content.description.skillsHeader}}</p>
+			<ul>
+				<li ng-repeat="skill in content.description.skills">{{skill}}</li>
+			</ul>
+			<p ng-bind-html="content.description.skillsFooter"></p>
+		</div>
+	</div>
+	<div class="project body-section {{project.color_bg}}" ng-repeat="project in content.projects" ng-include="'templates/project.html'">
+
+	</div>
+</main>
+<footer>
+	<div class="footer-wrapper wrapper" ng-include="'templates/footer.html'">
+
+	</div>
+</footer>
