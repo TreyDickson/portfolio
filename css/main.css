@@ -61,6 +61,9 @@ footer h1 {
 	float: right;
 	padding-right: 50px;
 }
+footer p {
+	float: right;
+}
 .footer-wrapper {
 	height: inherit;
 }
@@ -73,9 +76,9 @@ footer h1 {
 	margin: auto;
 }
 .body-section {
-	width: 550px;
 	float: left;
-	padding: 0 15px 15px 15px;
+	margin: auto;
+	width: 100%;
 }
 .description-right {
 	width: 350px;
@@ -92,16 +95,44 @@ footer h1 {
 }
 
 .project {
-	height: 350px;
+	margin-bottom: 25px;
 }
 .project-header {
 	height: 50px;
-	background: white;
-	color: #ad1c00;
+	text-align: center;
+	border-bottom: 1px solid #d5d5cd;
+	margin: auto auto 15px auto;
+	width: 75%;
+}
+.project-header h2 {
+	margin: 0;
 }
 .project img {
 	max-width: 100%;
 	max-height: 100%;
+}
+.project-image {
+	text-align: center;
+}
+.project-description {
+	border-top: 1px solid #d5d5cd;
+	width: 75%;
+	margin: 15px auto 15px auto;
+	border-top: 1px solid #d5d5cd;
+}
+.about {
+	float: left;
+	width: 65%;
+	padding: 15px;
+}
+.details {
+	float: left;
+	width: 25%;
+	border-left: 1px solid #d5d5cd;
+	padding: 15px;
+}
+.details h3 {
+	margin: 0;
 }
 
 .vertical-center {

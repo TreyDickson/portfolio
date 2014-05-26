@@ -16,67 +16,45 @@
 		<script src="js/App.js" ></script>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link href="css/main.css" rel="stylesheet" type="text/css" />
-		<!--<link href="css/style.css" rel="stylesheet" type="text/css" />-->
 		
 		<script>
-		  /**(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-28550607-1', 'jodickson.com');
-		  ga('send', 'pageview');**/
-		</script>
+		  ga('create', 'UA-51268143-1', 'treydickson.com');
+		  ga('send', 'pageview');
+		</script>	
 	</head>
 	<body ng-controller="MainController">
-			<header >
-				<div class="header-wrapper wrapper" ng-include="'templates/header.html'">
+		<header >
+			<div class="header-wrapper wrapper" ng-include="'templates/header.html'">
+			</div>
+		</header>
+		<main class="wrapper">
+			<div class="description">
+				<div class="description-left">
+					<p>I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
+					<p>I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
+					<p>I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
 				</div>
-			</header>
-			<main class="wrapper">
-				<div class="description">
-					<span class="description-left">
-						<p>I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
-						<p>I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
-						<p>I am a web and application developer with a broad background. Please take a look at some of the projects below to get a feel for the sort of development I have been involved with. Beyond the projects below I have also been involved with a wide variety of client projects ranging from the defense industry data analysis to financial applications and enterprise application intergrations.</p>
-					</span>
-					<span class="body-section description-right">
-						<p>Just some of the technologies I have experience with include:</p>
-						<ul>
-							<li ng-repeat="skill in content.info.skills">{{skill}}</li>
-						</ul>
-						<p>To view my full list of qualifications and work experience, please visit my <a target="_blank" href="{{content.info.linkedin.url}}">LinkedIn Profile</a>.</p>
-					</span>
+				<div class="body-section description-right">
+					<p>Just some of the technologies I have experience with include:</p>
+					<ul>
+						<li ng-repeat="skill in content.info.skills">{{skill}}</li>
+					</ul>
+					<p>To view my full list of qualifications and work experience, please visit my <a target="_blank" href="{{content.info.linkedin.url}}">LinkedIn Profile</a>.</p>
 				</div>
-				<div class="project body-section" ng-repeat="project in content.projects" ng-include="'templates/project.html'">
+			</div>
+			<div class="project body-section" ng-repeat="project in content.projects" ng-include="'templates/project.html'">
 
-				</div>
-				<!--<span ng-repeat="project in content.projects">
-					<section class="project">
-						<div class="screenshot" style="background-color: {{project.color_bg}};">
-							<a href="{{project.url}}" target="_blank">
-								<img src="{{project.photo}}" alt="{{project.name}}" title="{{project.name}}" />
-								<span class="animated" style="background-color: {{project.color_bg}};">View Website</span>
-							</a>
-						</div>
-						<div class="inner">
-							<h2><a href="{{project.url}}">{{project.name}}</a></h2>
-							<p class="description" ng-bind-html="project.desc"></p>
-							<div class="about" ng-bind-html="project.about"></div>
-							<div class="details">
-								<h3>Skills Contributed:</h3>
-								<ul ng-repeat="skill in project.technology">
-								   <li>{{skill}}</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-				</span>-->
-			</main>
-			<footer >
-				<div class="footer-wrapper wrapper" ng-include="'templates/footer.html'">
+			</div>
+		</main>
+		<footer >
+			<div class="footer-wrapper wrapper" ng-include="'templates/footer.html'">
 
-				</div>
-			</footer>
+			</div>
+		</footer>
 	</body>
 </html>

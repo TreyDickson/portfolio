@@ -1,6 +1,16 @@
-<!--<div class="project-header">
-	<strong>{{project.name}}</strong>
-</div> -->
+<div class="project-header">
+	<h2><a href="{{project.url}}">{{project.name}}</a></h2>
+	<span>{{project.desc}}</span>
+</div>
 <div class="project-image">
 	<img src="{{project.photo}}" alt="{{project.name}}" title="{{project.name}}" />
+</div>
+<div class="project-description">
+	<div class="about"><p>{{project.about}}</p><p>{{project.contribution}}</div>
+	<div class="details">
+		<h3>Skills Contributed:</h3>
+		<ul ng-repeat="skill in project.technology">
+		   <li>{{skill}}</li>
+		</ul>
+	</div>
 </div>
