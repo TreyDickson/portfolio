@@ -84,12 +84,12 @@ footer p {
 	width: 100%;
 }
 .description-right {
-	width: 350px;
+	width: 30%;
 	float: left;
 	padding: 0 15px 15px 15px;
 }
 .description-left {
-	width: 750px;
+	width: 60%;
 	float: left;
 	padding: 0 15px 15px 15px;
 }
@@ -133,7 +133,7 @@ footer p {
 }
 .about {
 	float: left;
-	width: 65%;
+	width: 63%;
 	padding: 15px;
 }
 .details {
@@ -164,4 +164,45 @@ footer p {
 .dark_bg {
 	overflow: hidden;
 	background: #34414c;
+}
+
+@media (max-width: 767px) {
+	.description {
+		padding: 15px 0 15px 0;
+	}
+	.description-left {
+		width: auto;
+		padding: 0 15px;
+	}
+	.description-right {
+		width: auto;
+		padding: 0 15px;
+	}
+	.project-description {
+		width: 100%;
+	}
+	.footer-right {
+		padding-right: 25px;
+	}
+	header nav {
+		padding-right: 25px;
+	}
+	.about {
+		width: auto;
+		padding: 0 15px;
+	}
+	.details {
+		width: auto;
+		border: none;
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.subtitle {
+		display: none;
+	}
+	.builtwith {
+		display: none;
+	}
 }
